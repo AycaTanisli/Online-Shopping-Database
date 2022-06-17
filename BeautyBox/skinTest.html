@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr">
+<head>
+    
+    <title>
+    Skin Test-BoxOfBeauty </title>
+
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/v4-shims.min.js" integrity="sha256-prFmieX9aRVhOV/ldXGklUUhS7NRBQUijQU4HcdnO8Q=" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'
+          type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:500" rel="stylesheet">
+    
+    <link href="https://cdn.denebunu.com/static/css/base_prod.8be487e9ce86.css" rel="stylesheet" type="text/css" media="screen,projection" />
+
+    
+     <style type="text/css">
+        @media only screen and (max-width: 768px) {
+            #social_icons {
+                text-align: left;
+                padding: 0;
+            }
+            .social_icon {
+                margin: 0 !important;
+                padding-right: 5px;
+            }
+        }
+        
+        .balloon {
+            --balloonDimension: 5vmax; /* 10% of min(viewport width, height) */
+            width: var(--balloonDimension);
+            height: var(--balloonDimension);
+            border-radius: 100% 100% 15% 100%;
+            margin: 0 0 0 25px;
+            transform: rotateZ(45deg);
+            position: fixed;
+            bottom: calc(-1 * var(--balloonDimension));
+            left: 0;
+            background-color: aqua;
+            z-index: 99999999999;
+        }
+        .balloon::before {
+            content: '';
+            width: 10%;
+            height: 25%;
+            background: radial-gradient(
+                circle,
+                rgba(255, 255, 255, 0.7) 0%,
+                rgba(255, 255, 255, 0.1) 100%
+            );
+            position: absolute;
+            left: 15%;
+            top: 45%;
+            border-radius: 100%;
+        }
+        .balloon::after {
+            content: '';
+            width: 13%;
+            height: 5%;
+            background-color: inherit;
+            position: absolute;
+            left: 90%;
+            top: 94%;
+            border-radius: 22%;
+            transform: rotateZ(-45deg);
+        }
+        .balloon .string {
+            position: absolute;
+            background-color: #990;
+            width: 2px;
+            height: calc(var(--balloonDimension) * 0.6);
+            transform-origin: top center;
+            transform: rotateZ(-45deg);
+            top: calc(var(--balloonDimension) - 6px);
+            left: calc(var(--balloonDimension) - 8px);
+        }
+        .balloon.pink {
+            background-color:#e5648a;
+            opacity: 0.8;
+        }
+        
+
+     </style>
+    
+    <style type="text/css">
+        h4 > a {
+            color: white;
+        }
+        h4 > a:hover {
+            color: white;
+        }
+     </style>
+    <script src="https://cdn.denebunu.com/static/denebunu/js/reverse.56113fc68b02.js"></script>
+
+</head>
+<body style="padding-top: 65px;" class="">
+
+<input type="hidden" name="csrfmiddlewaretoken" value="88EOc01ttZhnJjexIEe2QkAYsHHcFqylJVfEmFx2wrq81f7N4EVHTbRxNORn7fD2">
+<script type="text/javascript">
+
+    var adsTagIsMobile;
+
+    if (window.matchMedia("(max-width: 767px)").matches)
+    {
+        adsTagIsMobile = true;
+    }else{
+        adsTagIsMobile = false;
+    }
+
+    var gaOverrideCampaignTracking = false;
+    
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76207303-2', 'auto');
+
+  
+
+  if (gaOverrideCampaignTracking) {
+      ga('set', 'campaignName', gaCampaignName);
+      ga('set', 'campaignSource', gaCampaignSource);
+      ga('set', 'campaignMedium', gaCampaignMedium);
+
+      if (gaReferrer !== null) {
+          ga('set', 'referrer', gaReferrer);
+      }
+  }
+
+  ga('send', 'pageview');
+</script>
+
+
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        
+        
+        <div style="padding-top: 0px" class="container">
+            <div class="navbar-header">
+                <span>
+                    <button type="button" class="navbar-toggle mr-auto collapsed" data-toggle="collapse"
+                            data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span style="margin-top: -21px; margin-left: 11px; position: absolute;">
+                            <span class="new-notification" style="padding-top: 0; padding-right: 10px; border-radius: 100%;"></span>
+                        </span>
+                        
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </span>
+                
+                    <a class="navbar-brand" href="index.html"><img title="BoxOfBeauty Logo" alt="BoxOfBeautyLogo" src="C:\Users\HPZK\Desktop\BeautyBox\BoxOfBeautyLogo.jpeg"></a>
+                
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a class="js-scroll-to-registration-form large-menu-button js-ga-ui"
+                               data-ga-id="menu-register-btn"
+                               href="index.html"
+                               data-toggle="collapse" data-target=".navbar-collapse.in"
+                            >Sign Up</a>
+                        </li>
+                        <li><a class="js-ga-ui" data-ga-id="menu-login-btn" href="index.html">Sign In</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li>
+                            <a href="boxes.html">Boxes</a>
+                        </li>
+                        
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li><a href="ShoppingChart.html"
+                               title="Shopping Cart">Shopping Cart</a>
+                        </li>
+                        
+                        <li><a href="skinTest.html">Skin Test</a></li>
+                    </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+
+<div id="main">
+    
+    <div class="container-fluid">
+        <div class="title">
+            <h3><span>Survey</span></h3>
+            <p>You can find out your skin type by filling out the form below.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">&nbsp;</div>
+            <div class="col-md-6">
+                <form action="" method="POST">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="88EOc01ttZhnJjexIEe2QkAYsHHcFqylJVfEmFx2wrq81f7N4EVHTbRxNORn7fD2">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            
+
+
+<div class="container-fluid">
+    
+        <div class="row">
+            
+                <div class="col-md-12">
+                    <div class="margin-bottom-10" id="db_input_" >
+                        
+                            
+
+    <input type="text" name="first_name" placeholder="What is the moisture requirement of my skin?" required id="id_first_name" class=" floatlabel">
+
+                        
+                    </div>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="col-md-12">
+                    <div class="margin-bottom-10" id="db_input_" >
+                        
+                            
+
+                   <input type="text" name="Q3" placeholder="What are the problems with your skin?"  class=" floatlabel">
+
+                        
+                    </div>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="margin-bottom-10" id="db_input_" >
+                    
+                        
+
+
+
+<textarea name="message" cols="40" rows="10" placeholder="How is your skin like when you wake up in the morning?" max_length="2000" required id="id_message">
+</textarea><div  data-limit="2000"></div>
+
+
+                    
+                </div>
+            </div>
+        
+    </div>
+    
+        <div class="row">
+            
+                <div class="col-md-12">
+                    <div class="margin-bottom-10" id="db_input_" >
+                        
+                            
+
+
+
+    <input type="text" name="Q2" placeholder="What is your acne and blackhead status?"  class=" floatlabel">
+
+
+                        
+                    </div>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="col-md-12">
+                    <div class="margin-bottom-10" id="db_input_" >
+                        
+                            
+
+
+
+    <select name="category" required id="id_category" class=" chosen chosen-sr-only">
+  <option value="" selected>choose your face wash frequency</option>
+
+  <option value="3">Once a day</option>
+
+  <option value="10">Twice a day</option>
+
+  <option value="13">Once a week</option>
+
+  
+</select><span class='js-select-support select-arrow'></span><div class='js-select-support select-arrow-space'><b></b></div>
+
+
+                        
+                    </div>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="col-md-12">
+                    <div class="margin-bottom-10" id="db_input_" >
+                        
+                            
+
+
+
+    <input type="hidden" name="ref_code" placeholder="Referans kodu" id="id_ref_code">
+
+
+                        
+                    </div>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="col-md-12">
+                    <div class="margin-bottom-10" id="db_input_" >
+                        
+                            
+
+
+
+    <textarea name="text" cols="40" rows="10" placeholder="Which of the sensations of shine, itching, redness, wrinkles and tightness do you experience the most?" max_length="2000" required id="id_message">
+</textarea><div  data-limit="2000"></div>
+
+                        
+                    </div>
+                </div>
+            
+        </div>
+      
+    
+</div>
+                                                    
+                        </div>
+                        <div class="panel-footer" style="text-align: right;">
+                            <button type="submit" class="btn btn-primary" formnovalidate
+                                    data-loading-text="<span class='glyphicon glyphicon-refresh spinning'></span> Lütfen bekle..."
+                                    onclick="$(this).button('loading');">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Your Skin Type is: 
+                    </div>
+                    
+                    <div class="panel-body">
+                        <p>
+                            <strong>Recommended products: </strong><br/>
+                           
+                        </p>
+                        <br>
+                        <p>
+                            <strong>Recommended Care routine:</strong><br/>
+                            
+                        </p>
+                       <br>
+                       <p>
+                        <strong>Recommended Boxes:</strong><br/>
+                        
+                    </p>
+                    <br>
+                        <p>
+                            <strong>Contact with us: </strong><br/>
+                             boxOfBeauty@gmail.com
+                        </p>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    
+</div>
+<!--JS-->
+<script src="https://cdn.denebunu.com/static/jsi18n/tr/djangojs.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/wow.82f8e9dbeca6.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script type="application/javascript">
+    var globalUserIsAuthenticated = false;
+</script>
+<script>
+    var INFORMATION_TEXT = 'Bilgilendirme';
+</script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/init.79ee72e23cc5.js"></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/chosen.jquery.ee7f47bbcff5.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/bootstrap-dialog.97287a13ff2e.js"></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/custom.3676ecd8caa7.js"></script>
+
+<script src="https://cdn.denebunu.com/static/denebunu/js/balloon.fefaab692e63.js"></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/utils.120365bf5d6b.js"></script>
+
+<script src="https://cdn.denebunu.com/static/denebunu/js/floatlabels.34d1d330fb21.js"></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/announcements.3b777bf71f4f.js"></script>
+<script src=https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js></script>
+<script src="https://cdn.denebunu.com/static/denebunu/js/errors.8ac916f85448.js"></script>
+
+
+    <script src='https://www.google.com/recaptcha/api.js?hl=tr'></script>
+    <script src="https://cdn.denebunu.com/static/denebunu/js/widgets.4100614a285d.js"></script>
+    <script src="https://cdn.denebunu.com/static/denebunu/js/jquery.mask.5e5c32efa881.js"></script>
+
+  
+   
+</body>
+</html>
+<!--font-div-radio-responsive-->
